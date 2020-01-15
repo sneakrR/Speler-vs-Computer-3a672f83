@@ -5,7 +5,7 @@ $enemy[1] = "Papier";
 $enemy[2] = "Schaar";
 
 
-$random = rand(0, count($enemy));
+$random = rand(0, count($enemy) -1 );
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
