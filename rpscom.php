@@ -15,28 +15,28 @@ $jij = $_POST['jij'];
                echo "Het is gelijkspel";
        }
 
-       elseif ($jij == 'Steen' && $enemy[2] == 'Schaar'){
+       elseif ($jij == 'Steen' && $enemy[$random] == 'Schaar'){
                echo "Jij wint";
        }
-       elseif ($jij == 'Papier' && $enemy[0] == 'Steen'){
-               echo "Jij wint";
-       }
-
-       elseif ($jij == 'Schaar' && $enemy[1] == 'Papier'){
+       elseif ($jij == 'Papier' && $enemy[$random] == 'Steen'){
                echo "Jij wint";
        }
 
-       elseif ($jij == 'Steen' && $enemy[1] == 'Papier'){
+       elseif ($jij == 'Schaar' && $enemy[$random] == 'Papier'){
+               echo "Jij wint";
+       }
+
+       elseif ($jij == 'Steen' && $enemy[$random] == 'Papier'){
                echo "Jij verliest";
        }
 
 
 
-       elseif ($jij == 'Papier' && $enemy[2] == 'Schaar'){
+       elseif ($jij == 'Papier' && $enemy[$random] == 'Schaar'){
                echo "Jij verliest";
        }
 
-       elseif ($jij == 'Schaar' && $enemy[0] == 'Steen'){
+       elseif ($jij == 'Schaar' && $enemy[$random] == 'Steen'){
                echo "Jij verliest";
        }
 
